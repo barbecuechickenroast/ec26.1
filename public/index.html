@@ -8,7 +8,7 @@
     <meta property="og:title" content="EaglerCraftX 26.1.2">
     <meta property="og:description" content="Play Minecraft 26.1.2 in your browser">
     <meta property="og:type" content="website">
-    <title>EaglerCraftX 26.1.2</title>
+    <title>ec26.1</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -96,7 +96,12 @@
             </div>
         </div>
     </div>
-
+    <script>
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = '';
+        });
+    </script>
     <!-- Error Overlay -->
     <div id="error-overlay">
         <div class="error-title">Game Crashed</div>
